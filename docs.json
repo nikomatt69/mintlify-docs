@@ -1,35 +1,45 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "CAD/CAM FUN User Guide",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1d4ed8",
+    "light": "#1d4ed8",
+    "dark": "#1d4ed8"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/favicon.ico",
   "navigation": {
+    "logo": {
+    "light": "/images/logo.png",
+    "dark": "/images/logo.png"
+  },
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "User Guide",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Features",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "user-guide/cad-editor",
+              "user-guide/cam-editor",
+              "user-guide/project-management",
+              "user-guide/materials-tools",
+              "user-guide/machine-config"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "user-guide/ai-features",
+              "user-guide/collaboration",
+              "user-guide/troubleshooting"
             ]
           }
         ]
@@ -38,65 +48,69 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/api-reference"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "APIs",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api/overview",
+              "api-reference/api",
+              "api-reference/cad-api",
+              "api-reference/text-to-cad",
+              "api-reference/database-schema"
+            ]
+          },
+          {
+            "group": "Extensions",
+            "pages": [
+              "api/extensions/index",
+              "api/extensions/creating-extensions",
+              "api/extensions/text-to-cad"
             ]
           }
         ]
       }
+      
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://cadcamfun.xyz",
+          "icon": "globe"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GitHub",
+          "href": "https://github.com/nikomatt69/cadcamfun",
+          "icon": "github"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo.png",
+    "dark": "/images/logo.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@invite.cadcamfun.xyz"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Website",
+      "href": "https://cadcamfun.xyz"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/nikomatt69/cadcamfun",
+      "website": "https://cadcamfun.xyz"
     }
   }
 }
